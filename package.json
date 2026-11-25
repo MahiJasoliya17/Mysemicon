@@ -1,0 +1,11 @@
+{
+  "name": "mysemicon",
+  "version": "4.0.0",
+  "description": "MySemicon storefront - FastAPI + PostgreSQL backend serving the single-page frontend",
+  "scripts": {
+    "start": "python -m uvicorn backend.main:app --port 8000",
+    "dev": "python -m uvicorn backend.main:app --reload --port 8000",
+    "build-data": "python -m backend.build_data",
+    "migrate": "python -m scripts.migrate_to_postgres"
+  }
+}

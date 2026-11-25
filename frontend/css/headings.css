@@ -1,0 +1,17 @@
+/* Page headings, one compact style on every page (the way Amazon / Myntra / Flipkart do it): a single bold title line with a small
+   count or hint beside it and an optional text link on the right. No kicker label, no big serif banner. Loaded last. */
+.ph, .sc-head, .bd-head { display: flex; align-items: baseline; justify-content: space-between; gap: 6px 20px; flex-wrap: wrap; margin: 6px 0 16px !important; padding: 10px 0 12px !important; border-bottom: 1px solid var(--line); }
+.ph .kick, .bd-head .kick, .sc-kick { display: none !important; }
+.ph h1, .sc-head h1, .bd-head h1 { margin: 0 !important; font: 700 clamp(22px, 2.4vw, 28px)/1.25 var(--sans) !important; letter-spacing: -.01em !important; color: var(--ink) !important; }
+.ph h1 span, .sc-head h1 span, .bd-head h1 span { margin-left: 6px; font: 500 15px var(--sans); color: var(--muted); }
+.ph p, .bd-head p { margin: 4px 0 0 !important; font-size: 14px !important; color: var(--muted) !important; max-width: 70ch; }
+.ph .meta { font-size: 13px; }
+.ph .meta b { font-size: 20px; }
+.ph > div:first-child, .bd-head { min-width: 0; }
+.bd-head { display: block; }
+.sc-allp { display: inline-flex; align-items: center; gap: 6px; padding: 0 !important; border: 0 !important; background: none !important; color: var(--deep) !important; font: 600 14px var(--sans) !important; text-decoration: none; }
+.sc-allp:hover { text-decoration: underline; gap: 10px; color: var(--deep) !important; }
+.pg { padding-top: 6px; }
+.crumbs { margin-bottom: 4px; }
+@media (max-width: 640px) { .ph h1, .sc-head h1, .bd-head h1 { font-size: 22px !important; } }
+.ot-look h1 { font: 700 24px/1.25 var(--sans) !important; letter-spacing: -.01em; }

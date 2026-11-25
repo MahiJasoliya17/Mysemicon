@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Secrets and local settings
+.env
+*.key
+*.pem
+
+# Runtime data
+data/uploads/
+data/backups/
+*.dump
+
+# Large image folders (upload these to the server separately, not through git)
+media/
+frontend/assets/mirror/
+frontend/assets/cat_nobg/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

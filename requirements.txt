@@ -1,0 +1,14 @@
+# web app
+fastapi==0.135.1
+uvicorn==0.34.0
+python-multipart==0.0.22      # form and file uploads
+psycopg2-binary==2.9.10       # PostgreSQL driver
+curl_cffi==0.13.0             # live price sync and the scrape / refresh scripts
+pywebpush                     # phone / browser push notifications
+
+# optional: image cut-out tools (scripts/remove_bg.py, scripts/remove_bg_ai.py)
+pillow==12.3.0
+numpy
+scipy
+opencv-python-headless
+rembg==2.0.85
